@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>かぶログ | 使い方ガイド 兼 ランディングページ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/guide.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/app-icon.png" alt="かぶログ" class="logo-icon" onerror="this.style.display='none'">
+                <span>かぶログ</span>
+            </div>
+            <nav class="nav">
+                <a href="#steps">使い方の流れ</a>
+                <a href="#brokerage">CSV取得方法</a>
+                <a href="#analysis">分析のコツ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>証券会社のCSVをインポートして<br>管理できるシンプルなアプリ</h1>
+                <p>SBI証券・楽天証券に対応。複数の口座を一つのポートフォリオにまとめ、自由な切り口で資産を分析しましょう。</p>
+                <div class="hero-actions">
+                    <a href="#steps" class="btn btn-primary">使い方を見る</a>
+                    <a href="https://apps.apple.com/jp/app/%E3%81%8B%E3%81%B6%E3%83%AD%E3%82%B0/id6503947477" class="btn btn-outline" target="_blank">App Storeで開く</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="mockup-frame">
+                    <!-- ここにアプリのスクリーンショットを配置 -->
+                    <div class="mockup-placeholder">
+                        <img src="assets/hero-mockup.png" alt="App Mockup" onerror="this.src='https://via.placeholder.com/300x600?text=App+Screenshot'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="steps" class="steps-section">
+        <div class="container">
+            <h2 class="section-title">3ステップで始める資産管理</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>CSVを準備する</h3>
+                    <p>証券会社のサイト/アプリから、最新の資産残高CSVをダウンロードします。</p>
+                    <a href="#brokerage" class="link-text">取得方法を詳しく <span>→</span></a>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>アプリへ読み込む</h3>
+                    <p>アプリ右上の「CSV読込」をタップし、ダウンロードしたファイルを選択します。</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>カテゴリを設定</h3>
+                    <p>銘柄ごとに好きなカテゴリを設定して、自分だけのポートフォリオの完成です。</p>
+                    <a href="#analysis" class="link-text">分析のコツ <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brokerage" class="brokerage-section">
+        <div class="container">
+            <h2 class="section-title">証券会社別 CSV出力の手順</h2>
+            
+            <div class="broker-card">
+                <div class="broker-header sbi">
+                    <h3>SBI証券</h3>
+                </div>
+                <div class="broker-body">
+                    <div class="guide-steps">
+                        <div class="guide-step">
+                            <div class="guide-step-content">
+                                <h4><span class="guide-step-badge">1</span> ポートフォリオを開く</h4>
+                                <p>右上の3点メニュー（または「口座管理」メニュー）より<strong>「ポートフォリオ」</strong>をタップします。</p>
+                            </div>
+                            <div class="guide-step-image">
+                                <img src="assets/img/sbi_01.jpg" alt="SBI Step 1">
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="guide-step-content">
+                                <h4><span class="guide-step-badge">2</span> CSVを取得する</h4>
+                                <p>画面右上の<strong>「CSVダウンロード」</strong>をタップすると、ファイルが保存されます。</p>
+                            </div>
+                            <div class="guide-step-image">
+                                <img src="assets/img/sbi_02.jpg" alt="SBI Step 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="broker-card">
+                <div class="broker-header rakuten">
+                    <h3>楽天証券</h3>
+                </div>
+                <div class="broker-body">
+                    <div class="guide-steps">
+                        <div class="guide-step">
+                            <div class="guide-step-content">
+                                <h4><span class="guide-step-badge">1</span> PCサイトへ切り替え</h4>
+                                <p>ログイン後、ページ最下部までスクロールし<strong>「PCサイトを表示」</strong>をタップします。</p>
+                                <p class="text-small">※最新のCSV出力機能を利用するため、PC版表示が必要です。</p>
+                            </div>
+                            <div class="guide-step-image">
+                                <img src="assets/img/rakuten_01.jpg" alt="Rakuten Step 1">
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="guide-step-content">
+                                <h4><span class="guide-step-badge">2</span> マイメニューを開く</h4>
+                                <p>右上の<strong>「マイメニュー」</strong>ボタンをタップします。</p>
+                            </div>
+                            <div class="guide-step-image">
+                                <img src="assets/img/rakuten_02.jpg" alt="Rakuten Step 2">
+                            </div>
+                        </div>
+
+                        <!-- 通常・投資信託 -->
+                        <div class="guide-sub-section">
+                            <h4 class="guide-sub-title">国内・米国株式、投資信託の場合</h4>
+                            <div class="guide-step">
+                                <div class="guide-step-content">
+                                    <h4><span class="guide-step-badge">3</span> 保有商品一覧へ</h4>
+                                    <p>左上の<strong>「保有商品一覧」</strong>をタップします。</p>
+                                </div>
+                                <div class="guide-step-image">
+                                    <img src="assets/img/rakuten_03.jpg" alt="Rakuten Step 3">
+                                </div>
+                            </div>
+                            <div class="guide-step" style="margin-top: 32px;">
+                                <div class="guide-step-content">
+                                    <h4><span class="guide-step-badge">4</span> CSVを保存</h4>
+                                    <p>右上の<strong>「CSVで保存」</strong>をタップします。</p>
+                                </div>
+                                <div class="guide-step-image">
+                                    <img src="assets/img/rakuten_04.jpg" alt="Rakuten Step 4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 信用取引 -->
+                        <div class="guide-sub-section">
+                            <h4 class="guide-sub-title">信用取引の方はこちら</h4>
+                            <div class="guide-step">
+                                <div class="guide-step-content">
+                                    <h4><span class="guide-step-badge">3</span> 信用建玉一覧へ</h4>
+                                    <p>マイメニュー左上の<strong>「信用建玉一覧」</strong>をタップします。</p>
+                                </div>
+                                <div class="guide-step-image">
+                                    <img src="assets/img/rakuten_05.jpg" alt="Rakuten Step 3 Margin">
+                                </div>
+                            </div>
+                            <div class="guide-step" style="margin-top: 32px;">
+                                <div class="guide-step-content">
+                                    <h4><span class="guide-step-badge">4</span> 信用CSVを保存</h4>
+                                    <p>右上の<strong>「CSV保存」</strong>をタップします。</p>
+                                </div>
+                                <div class="guide-step-image">
+                                    <img src="assets/img/rakuten_06.jpg" alt="Rakuten Step 4 Margin">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tip-box">
+                <h4>場所が見つからない場合</h4>
+                <p>ブラウザでダウンロードしたCSVは、通常iPhoneの<strong>「ファイル」アプリ</strong>の「ダウンロード」フォルダに保存されます。<br>
+                iCloud Drive または「このiPhone内」の両方を確認してください。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="analysis" class="analysis-section">
+        <div class="container">
+            <h2 class="section-title">分析を深めるカテゴリ設定</h2>
+            <div class="analysis-grid">
+                <div class="analysis-text">
+                    <p>「かぶログ」の最大の特徴は、銘柄ごとに最大5つまで<strong>自由なカテゴリ（分析軸）</strong>を設定できる点です。</p>
+                    <ul class="check-list">
+                        <li><strong>地域別</strong>: 日本、米国、新興国など</li>
+                        <li><strong>セクター</strong>: IT、金融、消費財など</li>
+                        <li><strong>投資法</strong>: 高配当、成長、割安など</li>
+                        <li><strong>口座別</strong>: 夫、妻、子供、特定、NISAなど</li>
+                    </ul>
+                    <p>一度設定すれば、ダッシュボードの円グラフをタップするだけで、その切り口での資産構成が瞬時に表示されます。</p>
+                </div>
+                <div class="analysis-image">
+                    <div class="img-box shadow">
+                        <img src="assets/analysis-sample.png" alt="Analysis Example" onerror="this.src='https://via.placeholder.com/400x300?text=Category+Chart+Screen'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 かぶログ. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://haruapps.github.io/kabulog/legal/privacy-policy.html">プライバシーポリシー</a>
+                <a href="https://haruapps.github.io/kabulog/legal/terms-of-service.html">利用規約</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

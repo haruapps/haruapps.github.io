@@ -112,7 +112,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 0 32px 0;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--text-primary);
     display: flex;
@@ -290,8 +290,13 @@ section {
     color: white;
 }
 
-.broker-header.sbi { background-color: var(--sbi); }
-.broker-header.rakuten { background-color: var(--rakuten); }
+.broker-header.sbi {
+    background-color: var(--sbi);
+}
+
+.broker-header.rakuten {
+    background-color: var(--rakuten);
+}
 
 .broker-body {
     padding: 32px;
@@ -399,7 +404,7 @@ section {
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .guide-step-image img {
@@ -496,30 +501,105 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .container { padding: 0 20px; }
-    
-    .header { height: 60px; }
-    .logo { font-size: 17px; gap: 8px; }
-    .logo-icon { width: 28px; height: 28px; }
-    .nav { gap: 12px; }
-    .nav a { font-size: 12px; }
+    .container {
+        padding: 0 20px;
+    }
 
-    .hero { padding: 40px 0; }
-    .hero .container { flex-direction: column; text-align: center; }
-    .hero h1 { font-size: 26px; line-height: 1.4; margin-bottom: 16px; }
-    .hero p { font-size: 15px; margin-bottom: 24px; }
-    .hero-actions { justify-content: center; gap: 10px; }
-    .btn { padding: 10px 20px; font-size: 14px; }
+    .header {
+        height: 60px;
+    }
 
-    .section-title { font-size: 24px; margin-bottom: 32px; }
-    
-    .steps-grid { grid-template-columns: 1fr; }
-    .consolidation-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
-    .consolidation-grid .consolidation-text h2 { text-align: center; }
-    .consolidation-visual { padding: 20px; }
-    .guide-step { grid-template-columns: 1fr; gap: 16px; }
-    .guide-step:nth-child(even) .guide-step-image { order: 2; }
-    .analysis-grid { grid-template-columns: 1fr; text-align: center; }
-    .check-list li { justify-content: center; }
-    .mockup-frame { width: 240px; height: 480px; }
+    .logo {
+        font-size: 17px;
+        gap: 8px;
+    }
+
+    .logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consolidation-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .consolidation-grid .consolidation-text h2 {
+        text-align: center;
+    }
+
+    .consolidation-visual {
+        padding: 20px;
+    }
+
+    .guide-step {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .guide-step:nth-child(even) .guide-step-image {
+        order: 2;
+    }
+
+    .analysis-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .check-list li {
+        justify-content: center;
+    }
+
+    .mockup-frame {
+        width: 240px;
+        height: 480px;
+    }
 }

@@ -451,11 +451,23 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .container { padding: 0 40px; }
-    .hero { padding: 60px 0; }
+    .container { padding: 0 20px; }
+    
+    .header { height: 60px; }
+    .logo { font-size: 17px; gap: 8px; }
+    .logo-icon { width: 28px; height: 28px; }
+    .nav { gap: 12px; }
+    .nav a { font-size: 12px; }
+
+    .hero { padding: 40px 0; }
     .hero .container { flex-direction: column; text-align: center; }
-    .hero h1 { font-size: 32px; }
-    .hero-actions { justify-content: center; }
+    .hero h1 { font-size: 26px; line-height: 1.4; margin-bottom: 16px; }
+    .hero p { font-size: 15px; margin-bottom: 24px; }
+    .hero-actions { justify-content: center; gap: 10px; }
+    .btn { padding: 10px 20px; font-size: 14px; }
+
+    .section-title { font-size: 24px; margin-bottom: 32px; }
+    
     .steps-grid { grid-template-columns: 1fr; }
     .guide-step { grid-template-columns: 1fr; gap: 16px; }
     .guide-step:nth-child(even) .guide-step-image { order: 2; }

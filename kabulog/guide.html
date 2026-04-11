@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>かぶログ | 使い方ガイド 兼 ランディングページ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/guide.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -27,18 +31,20 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>証券会社のCSVをインポートして<br>管理できるシンプルなアプリ</h1>
-                <p>SBI証券・楽天証券に対応。複数の口座を一つのポートフォリオにまとめ、自由な切り口で資産を分析しましょう。</p>
+                <h1>自分だけの切り口で、家族の資産まで一元管理。<br>シンプルで強力なポートフォリオ管理アプリ</h1>
+                <p>SBI証券・楽天証券のCSVをインポートするだけ。複数口座や家族の資産を一箇所に集約。地域、セクター、投資スタイルなど「自分だけの軸」で、自由自在に資産を分析・管理できます。</p>
                 <div class="hero-actions">
                     <a href="#steps" class="btn btn-primary">使い方を見る</a>
-                    <a href="https://apps.apple.com/jp/app/%E3%81%8B%E3%81%B6%E3%83%AD%E3%82%B0/id6503947477" class="btn btn-outline" target="_blank">App Storeで開く</a>
+                    <a href="https://apps.apple.com/jp/app/%E3%81%8B%E3%81%B6%E3%83%AD%E3%82%B0/id6503947477"
+                        class="btn btn-outline" target="_blank">App Storeで開く</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="mockup-frame">
                     <!-- ここにアプリのスクリーンショットを配置 -->
                     <div class="mockup-placeholder">
-                        <img src="assets/hero-mockup.png" alt="App Mockup" onerror="this.src='https://via.placeholder.com/300x600?text=App+Screenshot'">
+                        <img src="assets/hero-mockup.png" alt="App Mockup"
+                            onerror="this.src='https://via.placeholder.com/300x600?text=App+Screenshot'">
                     </div>
                 </div>
             </div>
@@ -58,7 +64,7 @@
                 <div class="step-card">
                     <div class="step-number">2</div>
                     <h3>アプリへ読み込む</h3>
-                    <p>アプリ右上の「CSV読込」をタップし、ダウンロードしたファイルを選択します。</p>
+                    <p>アプリの「CSV読込」からファイルを選択。複数ファイルを一括で読み込み、家族全員の資産を合算することも可能です。</p>
                 </div>
                 <div class="step-card">
                     <div class="step-number">3</div>
@@ -70,15 +76,39 @@
         </div>
     </section>
 
+    <section id="consolidation" class="consolidation-section" style="background: white;">
+        <div class="container">
+            <div class="consolidation-grid">
+                <div class="consolidation-visual">
+                    <!-- 複数の口座が一つに集まるイメージのアイコン -->
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <div class="consolidation-text">
+                    <h2 style="text-align: left; margin-bottom: 24px;">複数口座・家族の資産を<br>ひとまとめに</h2>
+                    <p>「自分のSBI証券、妻の楽天証券、子供の未成年口座...」<br>
+                        バラバラに管理していた資産も、CSVを読み込むだけで自動的に合算。世帯全体の資産状況を、シンプルかつ強力なダッシュボードで一元管理できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="brokerage" class="brokerage-section">
         <div class="container">
             <h2 class="section-title">証券会社別 CSV出力の手順</h2>
 
-            <div class="tip-box" style="margin-top: -16px; margin-bottom: 32px; background-color: #f2f2f7; border-left-color: var(--primary);">
+            <div class="tip-box"
+                style="margin-top: -16px; margin-bottom: 32px; background-color: #f2f2f7; border-left-color: var(--primary);">
                 <h4>【推奨】Safariブラウザの使用</h4>
-                <p>証券会社サイトからのCSVダウンロードは、iPhone標準の<strong>Safari</strong>ブラウザで行うことを強く推奨します。他のブラウザ（Chrome等）では、ファイルが正しく保存されない場合があります。</p>
+                <p>証券会社サイトからのCSVダウンロードは、iPhone標準の<strong>Safari</strong>ブラウザで行うことを強く推奨します。他のブラウザ（Chrome等）では、ファイルが正しく保存されない場合があります。
+                </p>
             </div>
-            
+
             <div class="broker-card">
                 <div class="broker-header sbi">
                     <h3>SBI証券</h3>
@@ -88,7 +118,8 @@
                         <div class="guide-step">
                             <div class="guide-step-content">
                                 <h4><span class="guide-step-badge">1</span> ポートフォリオを開く</h4>
-                                <p><strong>SBI証券にログイン後</strong>、右上の3点メニュー（または「口座管理」メニュー）より<strong>「ポートフォリオ」</strong>をタップします。</p>
+                                <p><strong>SBI証券にログイン後</strong>、右上の3点メニュー（または「口座管理」メニュー）より<strong>「ポートフォリオ」</strong>をタップします。
+                                </p>
                             </div>
                             <div class="guide-step-image">
                                 <img src="assets/img/sbi_01.jpg" alt="SBI Step 1">
@@ -181,11 +212,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="tip-box">
                 <h4>場所が見つからない場合</h4>
                 <p>ブラウザでダウンロードしたCSVは、通常iPhoneの<strong>「ファイル」アプリ</strong>の「ダウンロード」フォルダに保存されます。<br>
-                iCloud Drive または「このiPhone内」の両方を確認してください。</p>
+                    iCloud Drive または「このiPhone内」の両方を確認してください。</p>
             </div>
         </div>
     </section>
@@ -195,18 +226,19 @@
             <h2 class="section-title">分析を深めるカテゴリ設定</h2>
             <div class="analysis-grid">
                 <div class="analysis-text">
-                    <p>「かぶログ」の最大の特徴は、銘柄ごとに最大5つまで<strong>自由なカテゴリ（分析軸）</strong>を設定できる点です。</p>
+                    <p>銘柄ごとに最大5つまで<strong>自由なカテゴリ（分析軸）</strong>を設定可能。証券会社標準の分類に縛られず、あなたの投資スタイルに合わせた多角的な分析が行えます。</p>
                     <ul class="check-list">
-                        <li><strong>地域別</strong>: 日本、米国、新興国など</li>
-                        <li><strong>セクター</strong>: IT、金融、消費財など</li>
-                        <li><strong>投資法</strong>: 高配当、成長、割安など</li>
-                        <li><strong>口座別</strong>: 夫、妻、子供、特定、NISAなど</li>
+                        <li><strong>地域別</strong>: 日本、米国、欧州、新興国など</li>
+                        <li><strong>セクター</strong>: IT、金融、高配当、優待株など</li>
+                        <li><strong>世帯構成</strong>: 夫、妻、子供の口座など</li>
+                        <li><strong>戦略別</strong>: 長期、短期、つみたて入金分など</li>
                     </ul>
-                    <p>一度設定すれば、ダッシュボードの円グラフをタップするだけで、その切り口での資産構成が瞬時に表示されます。</p>
+                    <p>一度設定すれば、ダッシュボードの円グラフをタップするだけで、その切り口での資産構成が瞬時に表示されます。シンプルながら、プロ並みの分析環境をあなたの手に。</p>
                 </div>
                 <div class="analysis-image">
                     <div class="img-box shadow">
-                        <img src="assets/analysis-sample.png" alt="Analysis Example" onerror="this.src='https://via.placeholder.com/400x300?text=Category+Chart+Screen'">
+                        <img src="assets/analysis-sample.png" alt="Analysis Example"
+                            onerror="this.src='https://via.placeholder.com/400x300?text=Category+Chart+Screen'">
                     </div>
                 </div>
             </div>
@@ -223,4 +255,5 @@
         </div>
     </footer>
 </body>
+
 </html>

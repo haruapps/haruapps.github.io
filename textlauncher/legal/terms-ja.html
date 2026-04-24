@@ -1,54 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>利用規約 - TextLauncher</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            color: #333;
-        }
-
-        h1,
-        h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 10px;
-            color: #000;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 - TextLauncher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1c1c1e;
+      background: #f2f2f7;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    header .app-name {
+      font-size: 14px;
+      color: #636366;
+    }
+    header .updated {
+      font-size: 13px;
+      color: #8e8e93;
+      margin-top: 4px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1c1c1e;
+      display: flex;
+      align-items: center;
+    }
+    p {
+      color: #3a3a3c;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      padding-left: 20px;
+      color: #3a3a3c;
+      margin-bottom: 12px;
+    }
+    ul:last-child { margin-bottom: 0; }
+    li { margin-bottom: 6px; }
+    .highlight {
+      background: #e8f4fd;
+      border-left: 4px solid #007aff;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      color: #0056cc;
+      font-weight: 500;
+    }
+    a { color: #007aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section-num {
+      display: inline-block;
+      background: #007aff;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 2px 8px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>利用規約</h1>
-    <p>制定日: 2026年4月24日</p>
+  <div class="container">
+    <header>
+      <h1>利用規約</h1>
+      <p class="app-name">TextLauncher — 定型文ランチャー</p>
+      <p class="updated">制定日：2026年4月24日</p>
+    </header>
 
-    <p>この利用規約（以下、「本規約」といいます。）は、Haru
-        Apps（以下、「当方」といいます。）が提供するアプリケーション「TextLauncher」（以下、「本アプリ」といいます。）の利用条件を定めるものです。本アプリをご利用になるユーザーの皆様（以下、「ユーザー」といいます。）には、本規約に従って本アプリをご利用いただきます。
-    </p>
+    <div class="card">
+      <p>この利用規約（以下、「本規約」といいます。）は、Haru Apps（以下、「当方」といいます。）が提供するアプリケーション「TextLauncher」（以下、「本アプリ」といいます。）の利用条件を定めるものです。本アプリをご利用になるユーザーの皆様（以下、「ユーザー」といいます。）には、本規約に従って本アプリをご利用いただきます。</p>
+    </div>
 
-    <h2>第1条（適用）</h2>
-    <p>本規約は、ユーザーと当方との間の本アプリの利用に関わる一切の関係に適用されるものとします。</p>
+    <div class="card">
+      <h2><span class="section-num">1</span>適用</h2>
+      <p>本規約は、ユーザーと当方との間の本アプリの利用に関わる一切の関係に適用されるものとします。</p>
+    </div>
 
-    <h2>第2条（本アプリの利用）</h2>
-    <p>ユーザーは、本規約に同意することを条件として、本アプリを利用することができます。ユーザーが本アプリをダウンロードし、利用を開始した時点で、本規約に同意したものとみなします。</p>
+    <div class="card">
+      <h2><span class="section-num">2</span>本アプリの利用</h2>
+      <p>ユーザーは、本規約に同意することを条件として、本アプリを利用することができます。ユーザーが本アプリをダウンロードし、利用を開始した時点で、本規約に同意したものとみなします。</p>
+    </div>
 
-    <h2>第3条（知的財産権）</h2>
-    <p>本アプリに関する著作権、商標権その他一切の知的財産権は、当方または当方にライセンスを許諾している者に帰属します。ユーザーは、法令により認められる私的利用の範囲を超えて、本アプリを無断で複製、送信、改変、その他の処分を行うことはできません。
-    </p>
+    <div class="card">
+      <h2><span class="section-num">3</span>知的財産権</h2>
+      <p>本アプリに関する著作権、商標権その他一切の知的財産権は、当方または当方にライセンスを許諾している者に帰属します。ユーザーは、法令により認められる私的利用の範囲を超えて、本アプリを無断で複製、送信、改変、その他の処分を行うことはできません。</p>
+    </div>
 
-    <h2>第4条（禁止事項）</h2>
-    <p>ユーザーは、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
-    <ul>
+    <div class="card">
+      <h2><span class="section-num">4</span>禁止事項</h2>
+      <p>ユーザーは、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
+      <ul>
         <li>法令または公序良俗に違反する行為</li>
         <li>犯罪行為に関連する行為</li>
         <li>本アプリを通じて違法または有害なコンテンツを送信する行為</li>
@@ -57,43 +128,52 @@
         <li>他のユーザーに成りすます行為</li>
         <li>当方のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為</li>
         <li>その他、当方が不適切と判断する行為</li>
-    </ul>
+      </ul>
+    </div>
 
-    <h2>第5条（アプリ内課金・広告）</h2>
-    <p>本アプリは、一部の機能を利用するためのアプリ内課金（PRO アップグレード）および広告表示を含みます。</p>
-    <ul>
+    <div class="card">
+      <h2><span class="section-num">5</span>アプリ内課金・広告</h2>
+      <p>本アプリは、一部の機能を利用するためのアプリ内課金（PRO アップグレード）および広告表示を含みます。</p>
+      <ul>
         <li>PRO アップグレードは買い切り型の非消耗型アイテムであり、一度ご購入いただくと永続的にすべての機能をご利用いただけます。自動更新はありません。</li>
         <li>お支払いは購入確認時に iTunes/App Store アカウントに請求されます。</li>
         <li>購入の復元は、本アプリ内の「購入を復元する」ボタンから行えます。</li>
         <li>購入の管理は、デバイスの「設定」→「Apple ID」から行えます。</li>
-        <li>本アプリ内課金は Apple Inc. が提供する決済手段を通じて処理されます。詳細については <a
-                href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple
-                のエンドユーザー使用許諾契約（EULA）</a>が適用されます。</li>
+        <li>本アプリ内課金は Apple Inc. が提供する決済手段を通じて処理されます。詳細については <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple のエンドユーザー使用許諾契約（EULA）</a>が適用されます。</li>
         <li>原則として、購入後の返金には応じられません。</li>
-    </ul>
+      </ul>
+    </div>
 
-    <h2>第6条（免責事項）</h2>
-    <p>当方は、本アプリに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。
-    </p>
-    <p>当方は、本アプリに起因してユーザーに生じたあらゆる損害について一切の責任を負いません。ただし、本アプリに関する当方とユーザーとの間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。
-    </p>
-    <p>本アプリは URL スキームを通じて外部アプリ（LINE、X、地図アプリ等）と連携しますが、連携先の外部アプリの動作・サービス内容について当方は一切の責任を負いません。</p>
+    <div class="card">
+      <h2><span class="section-num">6</span>免責事項</h2>
+      <p>当方は、本アプリに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。</p>
+      <p>当方は、本アプリに起因してユーザーに生じたあらゆる損害について一切の責任を負いません。ただし、本アプリに関する当方とユーザーとの間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。</p>
+      <p>本アプリは URL スキームを通じて外部アプリ（LINE、X、地図アプリ等）と連携しますが、連携先の外部アプリの動作・サービス内容について当方は一切の責任を負いません。</p>
+    </div>
 
-    <h2>第7条（サービス内容の変更等）</h2>
-    <p>当方は、ユーザーに通知することなく、本アプリの内容を変更しまたは本アプリの提供を中止することができるものとし、これによってユーザーに生じた損害について一切の責任を負いません。</p>
+    <div class="card">
+      <h2><span class="section-num">7</span>サービス内容の変更等</h2>
+      <p>当方は、ユーザーに通知することなく、本アプリの内容を変更しまたは本アプリの提供を中止することができるものとし、これによってユーザーに生じた損害について一切の責任を負いません。</p>
+    </div>
 
-    <h2>第8条（利用規約の変更）</h2>
-    <p>当方は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。変更後の利用規約は、本アプリ内または当方のウェブサイトに掲載したときから効力を生じるものとします。</p>
+    <div class="card">
+      <h2><span class="section-num">8</span>利用規約の変更</h2>
+      <p>当方は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。変更後の利用規約は、本アプリ内または当方のウェブサイトに掲載したときから効力を生じるものとします。</p>
+    </div>
 
-    <h2>第9条（準拠法・裁判管轄）</h2>
-    <p>本規約の解釈にあたっては、日本法を準拠法とします。</p>
-    <p>本アプリに関して紛争が生じた場合には、当方の本店所在地を管轄する裁判所を専属的合意管轄とします。</p>
+    <div class="card">
+      <h2><span class="section-num">9</span>準拠法・裁判管轄</h2>
+      <p>本規約の解釈にあたっては、日本法を準拠法とします。</p>
+      <p>本アプリに関して紛争が生じた場合には、当方の本店所在地を管轄する裁判所を専属的合意管轄とします。</p>
+    </div>
 
-    <h2>第10条（お問い合わせ）</h2>
-    <p>本規約に関するお問い合わせは、以下の連絡先までお願いいたします。</p>
-    <p><a href="https://forms.gle/63JCoi5uFfwhwR2W6">お問い合わせフォーム</a></p>
+    <div class="card">
+      <h2><span class="section-num">10</span>お問い合わせ</h2>
+      <p>本規約に関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <p><a href="https://forms.gle/63JCoi5uFfwhwR2W6" target="_blank">お問い合わせフォーム</a></p>
+    </div>
 
-    <p>以上</p>
+    <p style="text-align: center; color: #8e8e93; font-size: 14px; margin-top: 20px;">以上</p>
+  </div>
 </body>
-
 </html>

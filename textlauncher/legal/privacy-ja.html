@@ -1,68 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - TextLauncher</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            color: #333;
-        }
-
-        h1,
-        h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 10px;
-            color: #000;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - TextLauncher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1c1c1e;
+      background: #f2f2f7;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    header .app-name {
+      font-size: 14px;
+      color: #636366;
+    }
+    header .updated {
+      font-size: 13px;
+      color: #8e8e93;
+      margin-top: 4px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1c1c1e;
+      display: flex;
+      align-items: center;
+    }
+    p {
+      color: #3a3a3c;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      padding-left: 20px;
+      color: #3a3a3c;
+      margin-bottom: 12px;
+    }
+    ul:last-child { margin-bottom: 0; }
+    li { margin-bottom: 6px; }
+    .highlight {
+      background: #e8f4fd;
+      border-left: 4px solid #007aff;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      color: #0056cc;
+      font-weight: 500;
+    }
+    a { color: #007aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section-num {
+      display: inline-block;
+      background: #007aff;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 2px 8px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>プライバシーポリシー</h1>
-    <p>制定日: 2026年4月24日</p>
+  <div class="container">
+    <header>
+      <h1>プライバシーポリシー</h1>
+      <p class="app-name">TextLauncher — 定型文ランチャー</p>
+      <p class="updated">制定日：2026年4月24日</p>
+    </header>
 
-    <p>Haru
-        Apps（以下、「当方」といいます。）は、当方が提供するアプリケーション「TextLauncher」（以下、「本アプリ」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
-    </p>
+    <div class="card">
+      <p>Haru Apps（以下、「当方」といいます。）は、当方が提供するアプリケーション「TextLauncher」（以下、「本アプリ」といいます。）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。</p>
+    </div>
 
-    <h2>第1条（収集する情報）</h2>
-    <p>本アプリは、ユーザーの個人情報を収集しません。ユーザーが登録する定型文データはすべてデバイス内にのみ保存され、当方のサーバーに送信されることはありません。</p>
+    <div class="card">
+      <h2><span class="section-num">1</span>収集する情報</h2>
+      <div class="highlight">本アプリは、ユーザーの個人情報を収集しません。</div>
+      <p>ユーザーが登録する定型文データはすべてデバイス内にのみ保存され、当方のサーバーに送信されることはありません。</p>
+    </div>
 
-    <h2>第2条（定型文データの取り扱い）</h2>
-    <p>本アプリに登録した定型文およびカテゴリーはデバイスのローカルストレージ（SwiftData）に保存されます。当方はこれらのデータにアクセスすることはなく、外部に送信することもありません。</p>
-    <p>ユーザーが定型文を他のアプリ（LINE、X、地図アプリ等）に送信する場合、該当テキストは iOS の URL スキームを通じてデバイス上で直接その外部アプリに渡されます。この通信は当方のサーバーを経由しません。</p>
+    <div class="card">
+      <h2><span class="section-num">2</span>定型文データの取り扱い</h2>
+      <p>本アプリに登録した定型文およびカテゴリーはデバイスのローカルストレージ（SwiftData）に保存されます。当方はこれらのデータにアクセスすることはなく、外部に送信することもありません。</p>
+      <p>ユーザーが定型文を他のアプリ（LINE、X、地図アプリ等）に送信する場合、該当テキストは iOS の URL スキームを通じてデバイス上で直接その外部アプリに渡されます。この通信は当方のサーバーを経由しません。</p>
+    </div>
 
-    <h2>第3条（広告）</h2>
-    <p>本アプリの無料版では、第三者配信の広告サービス（Google
-        AdMob）を利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するために、デバイス識別子等を使用することがあります。これには、本アプリや他のサービスへのアクセスに関する情報が含まれる場合がありますが、氏名、住所、メールアドレス、電話番号は含まれません。
-    </p>
-    <p>iOS 14.5 以降では、App Tracking
-        Transparency（ATT）フレームワークに基づき、トラッキングの許可をユーザーに求めます。許可をいただけない場合、パーソナライズされていない広告が表示されることがあります。</p>
-    <p>PRO アップグレードをご購入いただいたユーザーには広告は表示されません。</p>
+    <div class="card">
+      <h2><span class="section-num">3</span>広告</h2>
+      <p>本アプリの無料版では、第三者配信の広告サービス（Google AdMob）を利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するために、デバイス識別子等を使用することがあります。</p>
+      <p>これには、本アプリや他のサービスへのアクセスに関する情報が含まれる場合がありますが、氏名、住所、メールアドレス、電話番号は含まれません。</p>
+      <p>iOS 14.5 以降では、App Tracking Transparency（ATT）フレームワークに基づき、トラッキングの許可をユーザーに求めます。許可をいただけない場合、パーソナライズされていない広告が表示されることがあります。</p>
+      <p>PRO アップグレードをご購入いただいたユーザーには広告は表示されません。</p>
+    </div>
 
-    <h2>第4条（個人情報の第三者提供）</h2>
-    <p>当方は、法令に基づく場合を除き、ユーザーの個人情報を第三者に提供することはありません。</p>
+    <div class="card">
+      <h2><span class="section-num">4</span>個人情報の第三者提供</h2>
+      <p>当方は、法令に基づく場合を除き、ユーザーの個人情報を第三者に提供することはありません。</p>
+    </div>
 
-    <h2>第5条（プライバシーポリシーの変更）</h2>
-    <p>本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく変更することができるものとします。変更後のプライバシーポリシーは、本アプリ内または当方のウェブサイトに掲載したときから効力を生じるものとします。
-    </p>
+    <div class="card">
+      <h2><span class="section-num">5</span>プライバシーポリシーの変更</h2>
+      <p>本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく変更することができるものとします。変更後のプライバシーポリシーは、本アプリ内または当方のウェブサイトに掲載したときから効力を生じるものとします。</p>
+    </div>
 
-    <h2>第6条（お問い合わせ）</h2>
-    <p>本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
-    <p><a href="https://forms.gle/63JCoi5uFfwhwR2W6">お問い合わせフォーム</a></p>
+    <div class="card">
+      <h2><span class="section-num">6</span>お問い合わせ</h2>
+      <p>本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <p><a href="https://forms.gle/63JCoi5uFfwhwR2W6" target="_blank">お問い合わせフォーム</a></p>
+    </div>
 
-    <p>以上</p>
+    <p style="text-align: center; color: #8e8e93; font-size: 14px; margin-top: 20px;">以上</p>
+  </div>
 </body>
-
 </html>
